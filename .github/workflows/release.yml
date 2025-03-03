@@ -32,8 +32,12 @@ jobs:
 
       - name: Commit Updated Files
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add package.json index.js
-          git commit -m "Auto-update for $(date +'%Y-%m-%d')"
-          git push
+          git config --global user.name 'arimet'
+          git config --global user.email 'anthony.rimet03@gmail.com'
+          git add package.json index.js package-lock.json
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "Auto-update for $(date +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit"
+          fi
