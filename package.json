@@ -1,6 +1,6 @@
 {
   "name": "just-today",
-  "version": "2025.03.03",
+  "version": "2025.3.3",
   "description": "[![Daily Version Update](https://img.shields.io/badge/version-daily-blue.svg)](https://www.npmjs.com/package/just-today)",
   "main": "index.js",
   "scripts": {

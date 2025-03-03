@@ -37,6 +37,11 @@ jobs:
             echo "No changes to commit"
           fi
 
+      - name: Verify NPM User
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}    
+
       - name: Publish Package
         run: npm publish
         env:

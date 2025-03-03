@@ -2,10 +2,7 @@ const fs = require('fs');
 
 const now = new Date();
 const dateString = now.toISOString().split('T')[0]; // "YYYY-MM-DD"
-const version = `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(
-    2,
-    '0',
-)}.${String(now.getDate()).padStart(2, '0')}`;
+const version = `${now.getFullYear()}.${now.getMonth() + 1}.${now.getDate()}`;
 
 // Generate index.js with the function
 const code = `module.exports = function today() { return "${dateString}"; };`;
