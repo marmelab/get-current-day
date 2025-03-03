@@ -1,0 +1,39 @@
+name: Daily Release
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs at midnight UTC daily
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Update Date and Version
+        run: node updatePackage.js
+
+      # - name: Publish Package
+      #   run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Commit Updated Files
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add package.json index.js
+          git commit -m "Auto-update for $(date +'%Y-%m-%d')"
+          git push
