@@ -1,6 +1,7 @@
 {
-  "name": "just-today",
+  "name": "@arimet/just-today",
   "version": "2025.3.3",
+  "private": false,
   "description": "[![Daily Version Update](https://img.shields.io/badge/version-daily-blue.svg)](https://www.npmjs.com/package/just-today)",
   "main": "index.js",
   "scripts": {
