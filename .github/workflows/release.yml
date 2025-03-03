@@ -25,11 +25,6 @@ jobs:
       - name: Update Date and Version
         run: node updatePackage.js
 
-      # - name: Publish Package
-      #   run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Commit Updated Files
         run: |
           git config --global user.name 'arimet'
@@ -41,3 +36,8 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      - name: Publish Package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
