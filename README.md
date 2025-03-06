@@ -1,52 +1,54 @@
+# React + TypeScript + Vite
 
-# 📅 just-today
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-[![Daily Version Update](https://img.shields.io/badge/version-daily-blue.svg)](https://www.npmjs.com/package/just-today)
+Currently, two official plugins are available:
 
-A completely useless NPM package that does just one thing: returns today's date.  
-It gets a **new version every single day**, because... why not? 🤷‍♂️  
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🚀 Installation
+## Expanding the ESLint configuration
 
-```sh
-npm install just-today
-```
-
-or  
-
-```sh
-yarn add just-today
-```
-
-## 📌 Usage
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
 ```js
-const today = require("just-today");
-
-console.log(today()); // "YYYY-MM-DD"
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
-That's it. Nothing more, nothing less.
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## 🔄 Automatic Daily Updates
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-Every day, a GitHub Action updates the package version to match the current date (`YYYY.MM.DD`).  
-If you want to stay up-to-date with **the latest version of today**, just keep updating the package daily:
-
-```sh
-npm update just-today
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
 ```
-
-## 🎉 Why does this exist?
-- Because we can.
-- Because daily package updates are fun.
-- Because **"what even is time?"**  
-
-## 🤝 Contributing
-Feel free to open an issue or a pull request... but honestly, there's nothing to improve here. 😆  
-
-## 📝 License
-MIT License. Use it however you like, but don't expect it to be useful.  
-
-## 🧑‍💻 Author
-- [Anthony RIMET](https://github.com/arimet)
