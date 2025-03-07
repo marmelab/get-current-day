@@ -6,4 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     base: '/get-current-day/',
     plugins: [react(), tailwindcss()],
+    build: {
+        minify: 'terser',
+    },
 });

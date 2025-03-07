@@ -116,6 +116,9 @@ function TestimonialCard({
             <img
                 alt=""
                 src={img}
+                loading="lazy"
+                width={394}
+                height={512}
                 className="absolute inset-x-0 top-0 aspect-square w-full object-cover"
             />
             <div
