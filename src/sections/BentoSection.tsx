@@ -14,7 +14,7 @@ const features = [
     {
         name: 'Lightweight and secure.',
         description:
-            'The package is lightweight, ensuring minimal impact on your application\'s performance, and is built with security in mind.',
+            "The package is lightweight, ensuring minimal impact on your application's performance, and is built with security in mind.",
         icon: LockClosedIcon,
     },
     {
@@ -28,7 +28,7 @@ const features = [
 export const BentoSection = () => {
     return (
         <div className="overflow-hidden py-12">
-            <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
                     <div className="px-6 md:px-0 lg:pt-4 lg:pr-4">
                         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
@@ -39,7 +39,14 @@ export const BentoSection = () => {
                                 A better workflow
                             </p>
                             <p className="mt-6 text-lg/8 text-gray-600">
-                                The 'get-current-day' package provides a simple utility to get the current day of the week, making it easier to manage date-related functionalities in your applications.
+                                The{' '}
+                                <span className="bg-linear-to-r from-orange-500 from-28% via-red-400 via-70% to-pink-600 bg-clip-text text-transparent">
+                                    get-current-day
+                                </span>{' '}
+                                package provides a simple utility to get the
+                                current day of the week, making it easier to
+                                manage date-related functionalities in your
+                                applications.
                             </p>
                             <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                                 {features.map((feature) => (
@@ -81,15 +88,55 @@ export const BentoSection = () => {
                                         </div>
                                     </div>
                                     <div className="px-6 pt-6 pb-14">
-                                        <code>
-                                            <pre className="text-sm/6 text-white">
-                                                {`import getCurrentDay from 'get-current-day';
-
-const today = getCurrentDay();
-console.log(\`Today is: \${today}\`);`
-                                                }
-                                            </pre>
-                                        </code>
+                                        <pre className="text-sm/6 text-white">
+                                            <code>
+                                                <span className="text-blue-400">
+                                                    import
+                                                </span>{' '}
+                                                <span className="text-green-400">
+                                                    {`{ today }`}
+                                                </span>{' '}
+                                                <span className="text-blue-400">
+                                                    from
+                                                </span>{' '}
+                                                <span className="text-yellow-400">
+                                                    'get-current-day'
+                                                </span>
+                                                ;
+                                                <br />
+                                                <br />
+                                                <span className="text-blue-400">
+                                                    const
+                                                </span>{' '}
+                                                <span className="text-green-400">
+                                                    today
+                                                </span>{' '}
+                                                <span className="text-blue-400">
+                                                    =
+                                                </span>{' '}
+                                                <span className="text-green-400">
+                                                    today
+                                                </span>
+                                                ();
+                                                <br />
+                                                <span className="text-green-400">
+                                                    console
+                                                </span>
+                                                .
+                                                <span className="text-blue-400">
+                                                    log
+                                                </span>
+                                                (
+                                                <span className="text-yellow-400">
+                                                    'Today is:{' '}
+                                                    {new Date()
+                                                        .toISOString()
+                                                        .slice(0, 10)}
+                                                    '
+                                                </span>
+                                                );
+                                            </code>
+                                        </pre>
                                     </div>
                                 </div>
                             </div>

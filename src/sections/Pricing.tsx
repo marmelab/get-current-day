@@ -7,13 +7,8 @@ const tiers = [
         href: '#',
         priceMonthly: '$0',
         description:
-            "Perfect for getting started with our product without any cost.",
-        features: [
-            '5 products',
-            'Up to 1,000 subscribers',
-            'Basic analytics',
-            'Email support',
-        ],
+            'Perfect for getting started with our completely useless package.',
+        features: ["Returns today's date", 'Daily updates', 'Basic support'],
         featured: false,
     },
     {
@@ -21,16 +16,15 @@ const tiers = [
         id: 'tier-enterprise',
         href: '#',
         priceMonthly: '$99',
-        description: 'All the bells and whistles for your enterprise needs.',
+        description:
+            'For those who need the absolute best in date-returning technology.',
         features: [
-            'Unlimited products',
-            'Unlimited subscribers',
-            'Advanced analytics',
-            'Dedicated support representative',
-            'Marketing automations',
-            'Custom integrations',
-            'Private jet access',
-            'Personal butler',
+            "Returns today's date",
+            'Daily updates',
+            'Priority support',
+            'Custom date formats',
+            'Dedicated account manager',
+            'Exclusive access to beta features',
         ],
         featured: true,
     },
@@ -42,7 +36,7 @@ function classNames(...classes: string[]) {
 
 export const Pricing = () => {
     return (
-        <div className="relative isolate px-6 py-12 lg:px-8">
+        <div className="relative isolate py-12">
             <div
                 aria-hidden="true"
                 className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -52,10 +46,10 @@ export const Pricing = () => {
                         clipPath:
                             'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                     }}
-                    className="mx-auto aspect-1155/678 w-[72.1875rem] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                    className="mx-auto aspect-1155/678 w-[72.1875rem] bg-linear-to-tr from-orange-400 to-pink-600 opacity-30"
                 />
             </div>
-            <div className="mx-auto max-w-4xl text-center">
+            <div className="mx-auto max-w-4xl text-center" id="pricing">
                 <h2 className="text-base/7 font-semibold text-pink-600">
                     Pricing
                 </h2>
@@ -65,8 +59,7 @@ export const Pricing = () => {
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty text-gray-600 sm:text-xl/8">
                 Choose an affordable plan that’s packed with the best features
-                for engaging your audience, creating customer loyalty, and
-                driving sales.
+                for getting today's date, every single day.
             </p>
             <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
                 {tiers.map((tier, tierIdx) => (
@@ -152,7 +145,8 @@ export const Pricing = () => {
                             ))}
                         </ul>
                         <a
-                            href={tier.href}
+                            href="https://www.npmjs.com/package/get-current-day"
+                            target="_blank"
                             aria-describedby={tier.id}
                             className={classNames(
                                 tier.featured

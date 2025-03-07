@@ -1,1 +1,29 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+    --animate-typing: typing 6s steps(60) 1s infinite alternate, blink .7s infinite;
+
+    @keyframes typing {
+        0% {
+            width: 0;
+            visibility: hidden;
+        }
+        70% {
+            width: 100%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+        100% {
+            border-color: black;
+        }
+    }
+}
+
+

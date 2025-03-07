@@ -19,28 +19,40 @@ import { Heading, Subheading } from './text';
 
 const testimonials = [
     {
-        img: './testimonials/anthony.jpg',
-        name: 'Anthony RIMET',
+        img: './testimonials/marty.jpg',
+        name: 'Marty McFly',
         title: 'Time Traveler',
         quote: 'Thanks to get-current-day, I always know what day it is, even when I’m lost in time.',
     },
     {
-        img: './testimonials/julien.jpeg',
-        name: 'Julien MATTIUSSI',
-        title: 'Professional Procrastinator',
-        quote: 'get-current-day helps me keep track of all the days I’ve wasted. Highly recommend!',
+        img: './testimonials/hermione.jpg',
+        name: 'Hermione Granger',
+        title: 'Time Turner User',
+        quote: 'With get-current-day, I can manage my time-turner schedule effortlessly.',
     },
     {
-        img: './testimonials/paul.jpeg',
-        name: 'Paul DARCEMONT',
-        title: 'Calendar Enthusiast',
-        quote: 'I used to collect calendars, but now I just use get-current-day. It’s way more efficient!',
+        img: './testimonials/phil.jpg',
+        name: 'Phil Connors',
+        title: 'Groundhog Day Expert',
+        quote: 'Every day feels new with get-current-day. It’s a game-changer!',
     },
     {
-        img: './testimonials/julie.jpeg',
-        name: 'Julie DAGNET',
-        title: 'Wonderland Explorer',
-        quote: 'In Wonderland, time is a mystery. get-current-day brings a bit of sanity to my adventures.',
+        img: './testimonials/doctor.jpg',
+        name: 'The Doctor',
+        title: 'Time Lord',
+        quote: 'Even a Time Lord needs to know the current day. get-current-day is fantastic!',
+    },
+    {
+        img: './testimonials/doc.jpg',
+        name: 'Doc Brown',
+        title: 'Inventor',
+        quote: 'Great Scott! get-current-day is the best tool for keeping track of time.',
+    },
+    {
+        img: './testimonials/sam.jpg',
+        name: 'Sam Beckett',
+        title: 'Quantum Leaper',
+        quote: 'Leaping through time is easier with get-current-day. Highly recommended!',
     },
 ];
 
@@ -141,12 +153,14 @@ function TestimonialCard({
 function CallToAction() {
     return (
         <div>
-            <p className="max-w-sm text-sm/6 text-gray-600">
-                Join the fun and start using get-current-day to always know what day it is.
+            <p className="max-w-lg text-sm/6 text-gray-600">
+                Join the fun and start using get-current-day to always know what
+                day it is.
             </p>
             <div className="mt-2">
                 <Link
                     href="https://www.npmjs.com/package/get-current-day"
+                    target='_blank'
                     className="inline-flex items-center gap-2 text-sm/6 font-medium text-orange-600"
                 >
                     Get started

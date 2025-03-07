@@ -3,30 +3,76 @@ import { Button } from './button';
 import { Container } from './container';
 import { Gradient } from './gradient';
 import { Subheading } from './text';
+import { Link } from './link';
 
 function CallToAction() {
     return (
-        <div className="relative pt-20 pb-16 text-center sm:py-24">
+        <div className="relative pt-20 pb-16 text-center sm:py-24" id="getting-started">
             <hgroup>
                 <Subheading>Get started</Subheading>
                 <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
                     Ready to dive in?
                     <br />
-                    Install our package today.
+                    Think Before You Install 🚀
                 </p>
             </hgroup>
+            <p className="mt-6 text-lg/6 text-gray-950">
+                Our <strong>troll package</strong> does something absurd: it
+                returns the current day, updates daily, and includes unnecessary
+                features—yet people still download it. This highlights a real
+                issue:{' '}
+                <strong>
+                    developers often install dependencies without questioning
+                    their necessity
+                </strong>
+            </p>
+            <p className="mt-6 text-lg/6 text-gray-950">
+                Every package you add increases software bloat, slows down
+                applications, and contributes to carbon emissions. As
+                developers, we have a duty to write efficient, sustainable code.
+                ⚡ <strong>Be mindful. Reduce waste.</strong> Before installing
+                a package, ask yourself: Do I really need this?
+            </p>
+            <p className="mt-6 text-lg/6 text-gray-950">
+                🧯🚒 <strong>Take action!</strong> Want to measure and reduce
+                the carbon footprint of your applications? <br />
+                Check out{' '}
+                <strong>
+                    GreenFrame, an open-source tool that helps you analyze the
+                    environmental impact of your code.
+                </strong>
+            </p>
+            <p className="mt-6 text-lg/6 text-gray-950">
+                Let's build smarter, greener, and more responsible software.
+                🌍💚
+            </p>
+
             <div className="mt-6">
-                <Button className="w-full sm:w-auto" href="#">
-                    Get started
+                <Button
+                    className="w-full sm:w-auto"
+                    href="https://github.com/marmelab/greenframe"
+                    target="_blank"
+                >
+                    Get GreenFrame
                 </Button>
             </div>
+            <p className="text-gray-500 mt-6 italic">
+                This website and package are heavily inspired by Shayan and his
+                site{' '}
+                <a
+                    href="https://getfullyear.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    https://getfullyear.com/
+                </a>
+                .
+            </p>
+            <p className="text-gray-500 italic">
+                This package is ephemeral for April Fools' Day and will be
+                removed at some point.
+            </p>
         </div>
-    );
-}
-
-function SitemapHeading({ children }: { children: React.ReactNode }) {
-    return (
-        <h3 className="text-sm/6 font-medium text-gray-950/50">{children}</h3>
     );
 }
 
@@ -34,16 +80,40 @@ function Sitemap() {
     return (
         <>
             <div>
-                <SitemapHeading>Anthony</SitemapHeading>
+                <Link
+                    className="bg-linear-to-r from-orange-500 from-28% via-red-400 via-70% to-pink-600 bg-clip-text text-transparent"
+                    target="_blank"
+                    href="https://github.com/arimet"
+                >
+                    Anthony Rimet
+                </Link>
             </div>
             <div>
-                <SitemapHeading>Julio</SitemapHeading>
+                <Link
+                    className="bg-linear-to-r from-orange-500 from-28% via-red-400 via-70% to-pink-600 bg-clip-text text-transparent"
+                    target="_blank"
+                    href="https://github.com/JulienMattiussi"
+                >
+                    Julien Mattuissi
+                </Link>
             </div>
             <div>
-                <SitemapHeading>Marmelab</SitemapHeading>
+                <Link
+                    className="bg-linear-to-r from-orange-500 from-28% via-red-400 via-70% to-pink-600 bg-clip-text text-transparent"
+                    target="_blank"
+                    href="https://marmelab.com/en/"
+                >
+                    Marmelab
+                </Link>
             </div>
             <div>
-                <SitemapHeading>GreenFrame</SitemapHeading>
+                <Link
+                    className="bg-linear-to-r from-orange-500 from-28% via-red-400 via-70% to-pink-600 bg-clip-text text-transparent"
+                    target="_blank"
+                    href="https://github.com/marmelab/greenframe"
+                >
+                    GreenFrame
+                </Link>
             </div>
         </>
     );
@@ -69,32 +139,12 @@ export function Footer() {
                             <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                                 <div className="col-span-2 flex">
                                     <PlusGridItem className="pt-6 lg:pb-6">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth={1.5}
-                                            stroke="currentColor"
-                                            className="size-6"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                                            />
-                                        </svg>
+                                        <Copyright />
                                     </PlusGridItem>
                                 </div>
                                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
                                     <Sitemap />
                                 </div>
-                            </div>
-                        </PlusGridRow>
-                        <PlusGridRow className="flex justify-between">
-                            <div>
-                                <PlusGridItem className="py-3">
-                                    <Copyright />
-                                </PlusGridItem>
                             </div>
                         </PlusGridRow>
                     </PlusGrid>
