@@ -2,7 +2,9 @@ import { Container } from './components/container';
 import { Footer } from './components/footer';
 import { LogoCloud } from './components/logo-cloud';
 import { Testimonials } from './components/testimonials';
+import { BentoSection } from './sections/BentoSection';
 import { Hero } from './sections/Hero';
+import { Pricing } from './sections/Pricing';
 
 export const App = () => {
     return (
@@ -13,6 +15,8 @@ export const App = () => {
                     <LogoCloud />
                 </Container>
                 <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
+                    <BentoSection />
+                    <Pricing />
                     {/* <FeatureSection />
                     <BentoSection /> */}
                 </div>

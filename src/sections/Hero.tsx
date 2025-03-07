@@ -13,10 +13,10 @@ export const Hero = () => {
                 <Navbar
                     banner={
                         <Link
-                            href="https://www.npmjs.com/package/just-today"
+                            href="https://www.npmjs.com/package/get-current-day"
                             className="flex items-center gap-1 rounded-full bg-pink-600/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-pink-600/30"
                         >
-                            Check out our daily updated NPM package: just-today
+                            Check out our daily updated NPM package: get-current-day
                             <ChevronRightIcon className="size-4" />
                         </Link>
                     }
@@ -27,17 +27,17 @@ export const Hero = () => {
                     </h1>
                     <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
                         Every JavaScript developer has struggled at least once
-                        to get the current date. Just-Today simplifies your
+                        to get the current date. get-current-day simplifies your
                         workflow, providing today's date instantly and
                         effortlessly.
                     </p>
                     <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-                        <Button href="https://www.npmjs.com/package/just-today">
+                        <Button href="https://www.npmjs.com/package/get-current-day">
                             Get started
                         </Button>
                         <Button
                             variant="secondary"
-                            href="https://github.com/arimet/just-today"
+                            href="https://github.com/arimet/get-current-day"
                         >
                             View on GitHub
                         </Button>

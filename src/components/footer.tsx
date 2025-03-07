@@ -52,7 +52,7 @@ function Sitemap() {
 function Copyright() {
     return (
         <div className="text-sm/6 text-gray-950">
-            &copy; {new Date().getFullYear()} Just-today.
+            &copy; {new Date().getFullYear()} get-current-day.
         </div>
     );
 }

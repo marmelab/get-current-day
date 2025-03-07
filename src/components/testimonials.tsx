@@ -22,25 +22,25 @@ const testimonials = [
         img: './testimonials/anthony.jpg',
         name: 'Anthony RIMET',
         title: 'Time Traveler',
-        quote: 'Thanks to just-today, I always know what day it is, even when I’m lost in time.',
+        quote: 'Thanks to get-current-day, I always know what day it is, even when I’m lost in time.',
     },
     {
         img: './testimonials/julien.jpeg',
         name: 'Julien MATTIUSSI',
         title: 'Professional Procrastinator',
-        quote: 'just-today helps me keep track of all the days I’ve wasted. Highly recommend!',
+        quote: 'get-current-day helps me keep track of all the days I’ve wasted. Highly recommend!',
     },
     {
         img: './testimonials/paul.jpeg',
         name: 'Paul DARCEMONT',
         title: 'Calendar Enthusiast',
-        quote: 'I used to collect calendars, but now I just use just-today. It’s way more efficient!',
+        quote: 'I used to collect calendars, but now I just use get-current-day. It’s way more efficient!',
     },
     {
         img: './testimonials/julie.jpeg',
         name: 'Julie DAGNET',
         title: 'Wonderland Explorer',
-        quote: 'In Wonderland, time is a mystery. just-today brings a bit of sanity to my adventures.',
+        quote: 'In Wonderland, time is a mystery. get-current-day brings a bit of sanity to my adventures.',
     },
 ];
 
@@ -142,11 +142,11 @@ function CallToAction() {
     return (
         <div>
             <p className="max-w-sm text-sm/6 text-gray-600">
-                Join the fun and start using just-today to always know what day it is.
+                Join the fun and start using get-current-day to always know what day it is.
             </p>
             <div className="mt-2">
                 <Link
-                    href="https://www.npmjs.com/package/just-today"
+                    href="https://www.npmjs.com/package/get-current-day"
                     className="inline-flex items-center gap-2 text-sm/6 font-medium text-orange-600"
                 >
                     Get started
