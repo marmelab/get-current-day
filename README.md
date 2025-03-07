@@ -1,7 +1,7 @@
 
-# 📅 get-today
+# 📅 get-current-day
 
-[![Daily Version Update](https://img.shields.io/badge/version-daily-blue.svg)](https://www.npmjs.com/package/get-today)
+[![Daily Version Update](https://img.shields.io/badge/version-daily-blue.svg)](https://www.npmjs.com/package/get-current-day)
 
 A completely useless NPM package that does just one thing: returns today's date.  
 It gets a **new version every single day**, because... why not? 🤷‍♂️  
@@ -9,19 +9,19 @@ It gets a **new version every single day**, because... why not? 🤷‍♂️
 ## 🚀 Installation
 
 ```sh
-npm install get-today
+npm install get-current-day
 ```
 
 or  
 
 ```sh
-yarn add get-today
+yarn add get-current-day
 ```
 
 ## 📌 Usage
 
 ```js
-const today = require("get-today");
+const today = require("get-current-day");
 
 console.log(today()); // "YYYY-MM-DD"
 ```
@@ -34,7 +34,7 @@ Every day, a GitHub Action updates the package version to match the current date
 If you want to stay up-to-date with **the latest version of today**, just keep updating the package daily:
 
 ```sh
-npm update get-today
+npm update get-current-day
 ```
 
 ## 🎉 Why does this exist?
