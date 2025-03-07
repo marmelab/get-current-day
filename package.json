@@ -1,8 +1,8 @@
 {
-  "name": "@arimet/just-today",
+  "name": "get-today",
   "version": "2025.3.7",
   "private": false,
-  "description": "[![Daily Version Update](https://img.shields.io/badge/version-daily-blue.svg)](https://www.npmjs.com/package/just-today)",
+  "description": "[![Daily Version Update](https://img.shields.io/badge/version-daily-blue.svg)](https://www.npmjs.com/package/get-today)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,10 +12,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arimet/just-today.git"
+    "url": "git+https://github.com/arimet/get-today.git"
   },
   "bugs": {
-    "url": "https://github.com/arimet/just-today/issues"
+    "url": "https://github.com/arimet/get-today/issues"
   },
-  "homepage": "https://github.com/arimet/just-today#readme"
+  "homepage": "https://github.com/arimet/get-today#readme"
 }
