@@ -7,7 +7,7 @@ import { Link } from './link';
 
 function CallToAction() {
     return (
-        <div className="relative pt-20 pb-16 text-center sm:py-24" id="getting-started">
+        <div className="relative pt-20 pb-16 text-center sm:py-24 max-w-2xl mx-auto" id="getting-started">
             <hgroup>
                 <Subheading>Get started</Subheading>
                 <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
@@ -16,7 +16,7 @@ function CallToAction() {
                     Think Before You Install 🚀
                 </p>
             </hgroup>
-            <p className="mt-6 text-lg/6 text-gray-950">
+            <p className="mt-6 text-lg/6 text-gray-950 text-justify">
                 Our <strong>troll package</strong> does something absurd: it
                 returns the current day, updates daily, and includes unnecessary
                 features—yet people still download it. This highlights a real
@@ -26,14 +26,14 @@ function CallToAction() {
                     their necessity
                 </strong>
             </p>
-            <p className="mt-6 text-lg/6 text-gray-950">
+            <p className="mt-6 text-lg/6 text-gray-950 text-justify">
                 Every package you add increases software bloat, slows down
                 applications, and contributes to carbon emissions. As
                 developers, we have a duty to write efficient, sustainable code.
                 ⚡ <strong>Be mindful. Reduce waste.</strong> Before installing
                 a package, ask yourself: Do I really need this?
             </p>
-            <p className="mt-6 text-lg/6 text-gray-950">
+            <p className="mt-6 text-lg/6 text-gray-950 text-justify">
                 🧯🚒 <strong>Take action!</strong> Want to measure and reduce
                 the carbon footprint of your applications? <br />
                 Check out{' '}
@@ -42,7 +42,7 @@ function CallToAction() {
                     environmental impact of your code.
                 </strong>
             </p>
-            <p className="mt-6 text-lg/6 text-gray-950">
+            <p className="mt-6 text-lg/6 text-gray-950 text-justify">
                 Let's build smarter, greener, and more responsible software.
                 🌍💚
             </p>

@@ -91,10 +91,15 @@ export const BentoSection = () => {
                                         <pre className="text-sm/6 text-white">
                                             <code>
                                                 <span className="text-blue-400">
+                                                    // npm install get-current-day;
+                                                </span>
+                                                <br />
+                                                <br />
+                                                <span className="text-blue-400">
                                                     import
                                                 </span>{' '}
                                                 <span className="text-green-400">
-                                                    {`{ today }`}
+                                                    today
                                                 </span>{' '}
                                                 <span className="text-blue-400">
                                                     from
