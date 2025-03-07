@@ -150,7 +150,7 @@ export const Pricing = () => {
                             aria-describedby={tier.id}
                             className={classNames(
                                 tier.featured
-                                    ? 'bg-pink-500 text-white shadow-xs hover:bg-pink-400 focus-visible:outline-pink-500'
+                                    ? 'bg-pink-700 text-white shadow-xs hover:bg-pink-400 focus-visible:outline-pink-500'
                                     : 'text-pink-600 ring-1 ring-pink-200 ring-inset hover:ring-pink-300 focus-visible:outline-pink-600',
                                 'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
                             )}

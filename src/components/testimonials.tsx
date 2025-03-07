@@ -19,37 +19,37 @@ import { Heading, Subheading } from './text';
 
 const testimonials = [
     {
-        img: './testimonials/marty.jpg',
+        img: './testimonials/marty.webp',
         name: 'Marty McFly',
         title: 'Time Traveler',
         quote: 'Thanks to get-current-day, I always know what day it is, even when I’m lost in time.',
     },
     {
-        img: './testimonials/hermione.jpg',
+        img: './testimonials/hermione.webp',
         name: 'Hermione Granger',
         title: 'Time Turner User',
         quote: 'With get-current-day, I can manage my time-turner schedule effortlessly.',
     },
     {
-        img: './testimonials/phil.jpg',
+        img: './testimonials/phil.webp',
         name: 'Phil Connors',
         title: 'Groundhog Day Expert',
         quote: 'Every day feels new with get-current-day. It’s a game-changer!',
     },
     {
-        img: './testimonials/doctor.jpg',
+        img: './testimonials/doctor.webp',
         name: 'The Doctor',
         title: 'Time Lord',
         quote: 'Even a Time Lord needs to know the current day. get-current-day is fantastic!',
     },
     {
-        img: './testimonials/doc.jpg',
+        img: './testimonials/doc.webp',
         name: 'Doc Brown',
         title: 'Inventor',
         quote: 'Great Scott! get-current-day is the best tool for keeping track of time.',
     },
     {
-        img: './testimonials/sam.jpg',
+        img: './testimonials/sam.webp',
         name: 'Sam Beckett',
         title: 'Quantum Leaper',
         quote: 'Leaping through time is easier with get-current-day. Highly recommended!',
@@ -161,7 +161,7 @@ function CallToAction() {
                 <Link
                     href="https://www.npmjs.com/package/get-current-day"
                     target='_blank'
-                    className="inline-flex items-center gap-2 text-sm/6 font-medium text-orange-600"
+                    className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
                 >
                     Get started
                     <ArrowLongRightIcon className="size-5" />
@@ -241,7 +241,7 @@ export function Testimonials() {
                                 }
                                 aria-label={`Scroll to testimonial from ${name}`}
                                 className={clsx(
-                                    'size-2.5 rounded-full border border-transparent bg-gray-300 transition',
+                                    'size-4.5 rounded-full border border-transparent bg-gray-300 transition',
                                     'data-active:bg-gray-400 data-hover:bg-gray-400',
                                     'forced-colors:data-active:bg-[Highlight] forced-colors:data-focus:outline-offset-4',
                                 )}
