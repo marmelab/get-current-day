@@ -21,7 +21,7 @@ yarn add get-current-day
 ## 📌 Usage
 
 ```js
-const today = require("get-current-day");
+import today from 'get-current-day';
 
 console.log(today()); // "YYYY-MM-DD"
 ```
@@ -50,3 +50,4 @@ MIT License. Use it however you like, but don't expect it to be useful.
 
 ## 🧑‍💻 Author
 - [Anthony RIMET](https://github.com/arimet)
+- [Julien Mattuissi](https://github.com/JulienMattiussi)
