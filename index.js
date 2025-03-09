@@ -1,1 +1,1 @@
-module.exports = function today() { return "2025-03-08"; };
+module.exports = function today() { return "2025-03-09"; };
