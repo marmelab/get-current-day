@@ -44,7 +44,7 @@ export const Hero = () => {
                         </Button>
                         <Button
                             variant="secondary"
-                            href="https://github.com/arimet/get-current-day"
+                            href="https://github.com/marmelab/get-current-day"
                             target="_blank"
                         >
                             View on GitHub ⭐
