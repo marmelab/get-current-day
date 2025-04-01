@@ -12,10 +12,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arimet/get-current-day.git"
+    "url": "git+https://github.com/marmelab/get-current-day.git"
   },
   "bugs": {
-    "url": "https://github.com/arimet/get-current-day/issues"
+    "url": "https://github.com/marmelab/get-current-day/issues"
   },
-  "homepage": "https://github.com/arimet/get-current-day#readme"
+  "homepage": "https://github.com/marmelab/get-current-day#readme"
 }
