@@ -1,6 +1,6 @@
 {
   "name": "get-current-day",
-  "version": "2025.4.17",
+  "version": "2025.4.18",
   "private": false,
   "description": "[![Daily Version Update](https://img.shields.io/badge/version-daily-blue.svg)](https://www.npmjs.com/package/get-current-day)",
   "main": "index.js",
