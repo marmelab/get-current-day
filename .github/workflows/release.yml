@@ -1,8 +1,8 @@
 name: Daily Release
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # Runs at midnight UTC daily
+  # schedule:
+  #  - cron: "0 0 * * *" # Runs at midnight UTC daily
   workflow_dispatch: # Allows manual triggering
 
 jobs:
